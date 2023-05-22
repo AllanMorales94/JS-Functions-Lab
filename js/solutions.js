@@ -40,3 +40,12 @@ if (x > y) {
 // };
 
 console.log(maxOfThree(3, 9, 10));
+
+// 3. Define a function, as a function declaration, isCharAVowel that takes a character as an argument and returns true if it is a vowel, false otherwise.
+
+function isCharAVowel(char) {
+  char = char.toLowerCase();
+  return('aeiouy'.indexOf(char) > -1);
+}
+
+console.log(isCharAVowel('a'));
