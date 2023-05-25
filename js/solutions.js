@@ -90,3 +90,15 @@ function reverseString(string) {
 }
 
 console.log(reverseString('rockstar'))
+
+// 8. Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
+
+const longestStringInArray = function(array) {
+let longest = 0;
+array.forEach(function(a) {
+  if (a.length > longest) longest = a.length;
+})
+return longest;
+};
+
+console.log(longestStringInArray(['hey', 'mayo', 'and', 'the', 'backend']));
